@@ -27,7 +27,8 @@ public class Test {
             try {
                 String s = str.readLine();
 
-                Pattern p = Pattern.compile("(\\d)\\[(\\d+)\\[(.*?)\\](.*?)\\]");
+//                Pattern p = Pattern.compile("(\\d)\\[(\\d+)\\[(.*?)\\](.*?)\\]");
+                Pattern p = Pattern.compile("\\d+\\[[\\(a-zA-Z)]*\" + \"\\]");
                 Matcher m = p.matcher(s);
 
                 List<Couple> couples = new ArrayList<>();
